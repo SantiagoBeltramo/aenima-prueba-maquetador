@@ -1,0 +1,382 @@
+:root {
+    --default-font-family: 'Montserrat', sans-serif;
+    --default-font-weight-bold: 700;
+
+    /*COLOR*/
+    --default-primary-color: #FA6980;
+    --white:#FFF;
+    --grey-light:#CBD0D3;
+    --grey-dark: #2A3037;
+    --grey-dark-blog: #202124;
+}
+
+body{
+    font-family: var(--default-font-family)
+}
+
+header {
+background: var(--white);
+box-shadow: 0px 3px 6px #00000029;
+text-transform: uppercase;
+font-weight: 500;
+font-size: 18px;
+}
+
+aside {
+    color:var(--grey-light);
+}
+
+h3 {
+    font-weight: var(--default-font-weight-bold);
+    text-transform: uppercase;
+    color: var(--grey-dark);
+    position: relative;
+}
+
+.container{
+    /*Modifica el Bootstrap Original */
+    max-width: 1290px;
+    padding-left: 45px!important;
+    padding-right: 45px!important;
+}
+
+/*NAVBAR*/
+
+.nav-link {
+    /*Modifica el Bootstrap Original */
+    color:var(--grey-light)!important;
+    margin-left: 20px;
+}
+
+.nav-link:hover{
+    color: var(--grey-dark)!important;
+}
+
+
+/*PARTE PRINCIPAL*/
+
+.parte-principal{
+    background-image: url("../img/viajes_hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 101vh;
+}
+
+.parte-principal .container {
+    position: relative;
+    height: 101vh;
+}
+
+.parte-principal-texto {
+    position: absolute;
+    width:50%;
+    top: 300px;
+    color: var(--white);
+    font-weight: var(--default-font-weight-bold);
+}
+
+.parte-principal-texto h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: var(--default-font-weight-bold);
+    padding-bottom: 20px;
+    border-bottom: 2px solid #FFF;
+}
+
+.parte-principal-texto h4 {
+    font-weight: var(--default-font-weight-bold);
+    padding: 20px 0px 10px 0px;
+}
+
+.parte-principal-texto-mobile {
+    position: absolute;
+    width:80%;
+    top: 300px;
+    color: var(--white);
+    font-weight: var(--default-font-weight-bold);
+}
+
+.parte-principal-texto-mobile h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: var(--default-font-weight-bold);
+    padding-bottom: 20px;
+    border-bottom: 2px solid #FFF;
+}
+
+.parte-principal-texto-mobile h4 {
+    font-weight: var(--default-font-weight-bold);
+    font-size: 20px;
+    line-height : 35px;
+    padding: 10px 0px 10px 0px;
+}
+
+.proxima-aventura {
+    position:absolute;
+    width: 280px;
+    background: #2a303788;
+    border: 2px dashed #ffffff8a;
+    border-radius: 6px;
+    right: 45px;
+    bottom: 10%;
+    color: var(--white);
+    padding: 30px;
+}
+
+.proxima-aventura h6 {
+    font-weight: var(--default-font-weight-bold);
+}
+
+.proxima-aventura span {
+    font-size: 13px;
+}
+
+.proxima-aventura-titulo {
+    color: var(--default-primary-color);
+}
+
+.proxima-aventura-flecha {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 27px
+}
+
+.pagination {
+    position: absolute;
+    bottom: 7%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    background-clip: padding-box; 
+    font-weight: var(--default-font-weight-bold);
+    flex-direction: column;
+}
+
+.linea-pag {
+    width: 500px;
+    height: 5px;
+    background-color: var(--default-primary-color);
+}
+
+.linea-pagination {
+    position: absolute;
+    bottom: 8.2%;
+    left:-445px;
+}
+
+/*TENDENCIAS*/
+
+.fondo-gris{
+    height: 736px;
+    position:absolute;
+    background-color: #EBEBEB;
+}
+
+.tendencias {
+    margin: 100px 0px;
+}
+
+.titulo-section {
+    margin-bottom: 25px;
+}
+
+.card-deck{
+    /*Modifica el Bootstrap Original */
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.card{
+    /*Modifica el Bootstrap Original */
+    border: 0px;
+    border-radius: 6px;
+}
+
+.card-tendencia {
+    box-shadow: 0px 3px 6px #00000029;
+    margin-right: 8px!important;
+    margin-left: 8px!important;
+}
+
+.card-body-tendencia {
+    padding: 3rem 2rem;
+}
+
+.contenedor-img {
+    height: 180px;
+}
+
+.card-img-top {
+    /*Modifica el Bootstrap Original */
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.card-nuevo{
+    position: absolute;
+    top: 169px;
+    left: 32px;
+}
+
+.nuevo-titulo{
+    font-size: 1em;
+    font-weight: var(--default-font-weight-bold);
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--default-primary-color);
+    border-radius: 6px;
+    padding: 8px 13px;
+}
+
+.card-title {
+    /*Modifica el Bootstrap Original */
+    font-weight: var(--default-font-weight-bold);
+}
+
+.card-text-tendecias {
+    font-size: 13px;
+    font-weight: 400;
+    color:#7A838D;
+}
+
+/*BLOG*/
+/* izquierda */
+.contenedor-img-blog {
+    height: 429px;
+    color: var(--white)!important;
+}
+
+.card-img-blog {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.card-img-overlay-blog {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2.5rem;
+}
+
+.card-img-overlay-blog h6 {
+    text-transform: uppercase;
+    font-weight: var(--default-font-weight-bold);
+}
+
+.card-img-overlay-inferior {
+    position: absolute;
+    bottom: 30px;
+}
+
+.card-text-blog {
+    font-size: 13px;
+}
+
+.separacion-blog {
+    margin-bottom: 40px;
+}
+
+/* Derecha/ Aside */
+
+.contenedor-img-aside {
+    height: 210px;
+}
+
+.card-img-aside {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.card-body-aside {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    color:var(--grey-light);
+}
+
+.aside{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+aside .card-text {
+    font-size: 13px;
+}
+
+aside .card-title {
+    font-size: 1rem;
+    font-weight: var(--default-font-weight-bold);
+    color: var(--grey-dark-blog);
+    margin: 1rem 0 0.5rem 0;
+}
+
+.col-lg-8, .col-md-8 {
+    padding-right: 8px!important;
+}
+
+.col-lg-4, .col-md-4 {
+    padding-left: 8px!important;
+}
+
+/*FOOTER*/
+
+footer{
+    position: relative;
+    height: 96px;
+    background: var(--grey-dark);
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.row-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: var(--white);
+}
+
+.redes {
+    margin: 0px 10px;
+}
+
+/*BreakPoint*/
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .blog {
+        display: none;
+    }
+    .card-tendencias-resto {
+        display: none;
+    }
+    .proxima-aventura {
+        display: none;
+    }
+    .parte-principal-texto {
+        display: none;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 769px) { 
+    .blog-mobile {
+        display: none;
+    }
+    .parte-principal-texto-mobile {
+        display: none;
+    }
+}
